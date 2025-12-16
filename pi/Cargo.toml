@@ -1,0 +1,12 @@
+[package]
+name = "pi_calculator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rug = { version = "1.15", features = ["float"] }
+num_cpus = "1.13"
+chrono = "0.4"
+
+[profile.dev]
+codegen-units = 8
